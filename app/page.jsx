@@ -1,5 +1,4 @@
 import CarCard from "@/components/car-card";
-import HomeSeacrh from "@/components/home-search";
 import { Button } from "@/components/ui/button";
 import { bodyTypes, carMakes, faqItems, featuredCars } from "@/lib/data";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import { Calendar, Car, ChevronRight, Shield } from "lucide-react";
 import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SignedOut } from "@clerk/nextjs";
+import HomeSearch from "@/components/home-search";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
             </p>
           </div>
           {/* Search Component (Client) */}
-          <HomeSeacrh />
+          <HomeSearch />
         </div>
       </section>
 
